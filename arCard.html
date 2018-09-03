@@ -3,7 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>AR card</title>
+	<title>5ebec's AR card</title>
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/earlyaccess/notosansjp.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
 	<!-- A-frame -->
 	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 	<!-- A-frame html shader -->
@@ -19,7 +33,9 @@
     <a-scene embedded arjs="debugUIEnabled:false;">
 			<!-- html -->
 		  <div id="panel">
-		    <figure><img class="profile_img" src="images/5ebec.jpg" alt="5ebec"></figure>
+				<figure>
+					<img class="profile_img" src="images/5ebec.jpg" alt="5ebec_img">
+				</figure>
 				<div class="wf-nicomoji">
 					<h1>へいほー (5ebec)</h1>
 				</div>
@@ -28,7 +44,7 @@
 		  </div>
 		<!-- set marker -->
   	<a-marker preset='custom' type='pattern' url="marker/pattern-marker.patt">
-			<a-plane rotation="-90 0 0" material="shader:html;target: #panel;"></a-plane>
+			<a-plane rotation="-90 0 0" material="shader:html;target: index.html#fh5co-main;"></a-plane>
   	</a-marker>
 		<!-- AR camera -->
   	<a-entity camera></a-entity>
