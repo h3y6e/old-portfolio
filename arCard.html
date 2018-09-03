@@ -11,14 +11,14 @@
 </head>
 
   <body style='margin : 0px; overflow: hidden;'>
-		<p>2</p>
+		<p>3</p>
 		<!-- debugUI false -->
     <a-scene embedded arjs="debugUIEnabled:false;">
 		<!-- set marker -->
   	<a-marker preset='custom' type='pattern' url="marker/pattern-marker.patt">
-			<a-box width="1.5" height="1" depth="0.05" position="0 0 0" rotation="-60 0 0" src="images/tatekan.jpg" shadow></a-box>
-			<a-cylinder position="2 0 0" radius="1" height="0.03" src="images/5ebec.jpg" shadow>
-				<a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+			<a-box width="1.5" height="1" depth="0.05" position="0 0 0" rotation="-30 0 0" src="images/tatekan.jpg" shadow></a-box>
+			<a-cylinder position="0 0 0" radius="0.5" height="0.03" rotation="-30 0 0" src="images/5ebec.jpg" shadow>
+				<a-animation attribute="position" from="0 0 0" to="2 0 0" easing="ease-out-cubic"></a-animation>
 			</a-cylinder>
   	</a-marker>
 		<!-- AR camera -->
