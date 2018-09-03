@@ -7,9 +7,9 @@
 	<!-- A-frame -->
 	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 	<!-- A-frame html shader -->
-	<script src="js/aframe-html-shader.min.js"></script>
+	<script src="https://unpkg.com/aframe-html-shader@0.2.0/dist/aframe-html-shader.min.js"></script>
 	<!-- html2canvas -->
-	<script src="js/html2canvas.min.js"></script>
+	<script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 	<!-- AR.js -->
 	<script src="js/aframe-ar.js"></script>
 </head>
@@ -19,7 +19,7 @@
     <a-scene embedded arjs="debugUIEnabled:false;">
 		<!-- set marker -->
   	<a-marker preset='custom' type='pattern' url="marker/pattern-marker.patt">
-			<a-plane material="shader:html;target: index.html#fh5co-main;"></a-plane>
+			<a-plane width="16" height="16" material="shader:html;target: index.html#fh5co-main;"></a-plane>
   	</a-marker>
 		<!-- AR camera -->
   	<a-entity camera></a-entity>
