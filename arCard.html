@@ -4,14 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>5ebec's AR card</title>
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/ar-style.css">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- font -->
@@ -32,19 +27,18 @@
 		<!-- debugUI false -->
     <a-scene embedded arjs="debugUIEnabled:false;">
 			<!-- html -->
-		  <div id="panel">
+		  <div id="target">
 				<figure>
 					<img class="profile_img" src="images/5ebec.jpg" alt="5ebec">
 				</figure>
 				<div class="wf-nicomoji">
 					<h1>へいほー (5ebec)</h1>
 				</div>
-				<p>京都大学工学部電気電子工学科3回生。<br>
-					情報系志望の雑魚。</p>
+				<p>京都大学工学部電気電子工学科3回生。<br>情報系志望の雑魚。</p>
 		  </div>
 		<!-- set marker -->
   	<a-marker preset='custom' type='pattern' url="marker/pattern-marker.patt">
-			<a-plane rotation="-90 0 0" material="shader:html;target: #panel;"></a-plane>
+			<a-plane width="16" height="10" rotation="-90 0 0" material="shader:html;target: #panel;"></a-plane>
   	</a-marker>
 		<!-- AR camera -->
   	<a-entity camera></a-entity>
