@@ -11,12 +11,13 @@
 </head>
 
   <body style='margin : 0px; overflow: hidden;'>
+		<p>1<p>
 		<!-- debugUI false -->
     <a-scene embedded arjs="debugUIEnabled:false;">
 		<!-- set marker -->
   	<a-marker preset='custom' type='pattern' url="marker/pattern-marker.patt">
-			<a-box width="1.5" height="1" depth="0.02" position="0 0 0" rotation="-30 0 0" src="images/tatekan.jpg" shadow></a-box>
-			<a-plane width="1" height="1" position="1.7 0 0" rotation="60 0 0" src="images/5ebec.jpg" shadow></a-plane>
+			<a-box width="1.5" height="1" depth="0.05" position="0 0 0" rotation="-60 0 0" src="images/tatekan.jpg" shadow></a-box>
+			<a-sphere width="1" height="1" position="1.5 0 0" radius="1.25" rotation="-60 0 0" src="images/5ebec.jpg" shadow></a-sphere>
   	</a-marker>
 		<!-- AR camera -->
   	<a-entity camera></a-entity>
