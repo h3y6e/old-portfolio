@@ -26,19 +26,9 @@
   <body style='margin : 0px; overflow: hidden;'>
 		<!-- debugUI false -->
     <a-scene embedded arjs="debugUIEnabled:false;">
-			<!-- html -->
-		  <div id="target">
-				<figure>
-					<img class="profile_img" src="images/5ebec.jpg" alt="5ebec">
-				</figure>
-				<div class="wf-nicomoji">
-					<h1>へいほー (5ebec)</h1>
-				</div>
-				<p>京都大学工学部電気電子工学科3回生。<br>情報系志望の雑魚。</p>
-		  </div>
 		<!-- set marker -->
   	<a-marker preset='custom' type='pattern' url="marker/pattern-marker.patt">
-			<a-plane width="16" height="10" rotation="-90 0 0" material="shader:html;target: #panel;"></a-plane>
+			<a-box depth="1" height="2" width="2" position="0 0 0" rotation="0 0 0" color="#4CC3D9" shadow></a-box>
   	</a-marker>
 		<!-- AR camera -->
   	<a-entity camera></a-entity>
