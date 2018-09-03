@@ -18,19 +18,17 @@
 		<!-- debugUI false -->
     <a-scene embedded arjs="debugUIEnabled:false;">
 			<!-- html -->
-		<div class="asset">
-		  <div class="panel" id="panel">
-		    <figure class="panel__figure"><img class="profile_img" src="images/5ebec.jpg" alt="5ebec"></figure>
+		  <div id="panel">
+		    <figure><img class="profile_img" src="images/5ebec.jpg" alt="5ebec"></figure>
 				<div class="wf-nicomoji">
-					<h1 class="panel__title">へいほー (5ebec)</h1>
+					<h1>へいほー (5ebec)</h1>
 				</div>
-				<p class="panel__summary">京都大学工学部電気電子工学科3回生。<br>
+				<p>京都大学工学部電気電子工学科3回生。<br>
 					情報系志望の雑魚。</p>
 		  </div>
-		</div>
 		<!-- set marker -->
   	<a-marker preset='custom' type='pattern' url="marker/pattern-marker.patt">
-			<a-plane width="16" height="16" material="shader:html;target: #panel;"></a-plane>
+			<a-plane rotation="-90 0 0" material="shader:html;target: #panel;"></a-plane>
   	</a-marker>
 		<!-- AR camera -->
   	<a-entity camera></a-entity>
