@@ -11,7 +11,7 @@
 </head>
 
   <body style='margin : 0px; overflow: hidden;'>
-		<p>12</p>
+		<p>13</p>
 		<!-- debugUI false -->
     <a-scene embedded arjs="debugUIEnabled:false;">
 		<!-- AR camera -->
@@ -28,9 +28,9 @@
 				<a-animation attribute="rotation" begin="3000" from="0 90 0" to="180 270 0" repeat="indefinite" easing="ease-out-elastic"></a-animation>
 			</a-cylinder>
 			
-			<a-video width="1.33" height="1" position="0 -0.1 0" src="movie/tatekan.mp4" shadow>
+			<a-plane width="1.33" height="1" rotation="-90 0 0" position="0 -0.1 0" src="images/oops.gif" shadow>
 				<a-animation attribute="position" begin="4000" from="0 -0.1 0" to="0 -0.1 1.5" easing="ease-out-cubic"></a-animation>
-			</a-video>
+			</a-plane>
 			
 			<a-box visible="false" width="1.5" height="1" depth="0.05" position="0 0 0" rotation="-30 0 0" src="images/tatekan.jpg" shadow>
 				<a-animation attribute="visible" begin="10000" to="true"></a-animation>
