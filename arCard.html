@@ -15,7 +15,7 @@
 </head>
 
   <body style='margin : 0px; overflow: hidden;'>
-		<p>18</p>
+		<p>19</p>
 		<div class="assets" id="target">
 			<a class="twitter-timeline" data-width="600" data-height="600" data-theme="dark" data-link-color="#a5ebec" href="https://twitter.com/5ebec?ref_src=twsrc%5Etfw">Tweets by 5ebec</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
@@ -30,22 +30,25 @@
   	<a-marker preset='custom' type='pattern' url="marker/pattern-marker.patt">
 			
 			<a-plane opacity="1" width="1.5" height="1" rotation="-90 0 0" color="#a5ebec" shadow>
-				<a-animation attribute="material.opacity" begin="1000" from="1" to="0" repeat="4" direction="alternate"></a-animation>
+				<a-animation attribute="material.opacity" from="1" to="0" repeat="4" direction="alternate"></a-animation>
 			</a-plane>
 			
-			<a-cylinder radius="0.25" height="0.03" position="0 -0.1 0" rotation="0 90 0" src="images/5ebec.jpg" shadow>
+			<a-box depth="0.05" position="0 0.5 0" rotation="0 0 0" src="#FFF" shadow></a-box>
+			
+			<a-cylinder opacity="1" radius="0.25" height="0.03" position="0 -0.1 0" rotation="0 90 0" src="images/5ebec.jpg" shadow>
+				<a-animation attribute="material.opacity" begin="2000" to="1"></a-animation>
 				<a-animation attribute="position" begin="2000" from="0 -0.1 0" to="1.5 -0.1 0" easing="ease-out-cubic"></a-animation>
 				<a-animation attribute="rotation" begin="3000" from="0 90 0" to="0 90 180" repeat="indefinite" easing="ease-out-elastic"></a-animation>
 				<a-animation attribute="position" begin="5000" from="1.5 -0.1 0" to="1.5 -0.1 -1" easing="ease-out-cubic"></a-animation>
 			</a-cylinder>
 			
-			<a-box visible="false" width="1.5" height="1" depth="0.05" position="0 0.5 0" rotation="-90 0 0" src="images/tatekan.jpg" shadow>
+			<a-box visible="false" width="1.5" height="1" depth="0.05" position="0 0 0" rotation="-90 0 0" src="images/tatekan.jpg" shadow>
 				<a-animation attribute="visible" begin="10000" to="true"></a-animation>
 				<a-animation attribute="rotation" begin="10000" dur="3000" from="-90 0 0" to="-30 0 0" easing="ease-out-elastic"></a-animation>
 			</a-box>
 			
-			<a-plane position="0 0 0" width="5" height="5" material="shader:html;target: #target;"></a-plane>
-			<a-plane position="-5 0 0" width="1" height="1" material="shader:html;target: #target2;"></a-plane>
+			<a-plane position="0 0 0" rotation="-90 0 0" width="5" height="5" material="shader:html;target: #target;"></a-plane>
+			<a-plane position="-5 0 0" rotation="-90 0 0" width="1" height="1" material="shader:html;target: #target2;"></a-plane>
   	</a-marker>
     </a-scene>
   </body>
