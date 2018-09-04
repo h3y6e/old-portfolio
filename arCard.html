@@ -15,7 +15,13 @@
 </head>
 
   <body style='margin : 0px; overflow: hidden;'>
-		<p>17</p>
+		<p>18</p>
+		<div class="assets" id="target">
+			<a class="twitter-timeline" data-width="600" data-height="600" data-theme="dark" data-link-color="#a5ebec" href="https://twitter.com/5ebec?ref_src=twsrc%5Etfw">Tweets by 5ebec</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+		<div id="target2">
+			<p>へいほー</p>
+		</div>
 		<!-- debugUI false -->
     <a-scene embedded arjs="debugUIEnabled:false;">
 		<!-- AR camera -->
@@ -38,8 +44,8 @@
 				<a-animation attribute="rotation" begin="10000" dur="3000" from="-90 0 0" to="-30 0 0" easing="ease-out-elastic"></a-animation>
 			</a-box>
 			
-			<a-plane position="0 0 0" width="5" height="5" material="shader:html;target: target.html#target;"></a-plane>
-			<a-plane position="-5 0 0" width="1" height="1" material="shader:html;target: target.html#target2;"></a-plane>
+			<a-plane position="0 0 0" width="5" height="5" material="shader:html;target: #target;"></a-plane>
+			<a-plane position="-5 0 0" width="1" height="1" material="shader:html;target: #target2;"></a-plane>
   	</a-marker>
     </a-scene>
   </body>
