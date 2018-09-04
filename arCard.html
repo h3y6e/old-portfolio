@@ -11,7 +11,7 @@
 </head>
 
   <body style='margin : 0px; overflow: hidden;'>
-		<p>8</p>
+		<p>9</p>
 		<!-- debugUI false -->
     <a-scene embedded arjs="debugUIEnabled:false;">
 		<!-- AR camera -->
@@ -23,13 +23,17 @@
 				<a-animation attribute="visible" begin="10000" to="false"></a-animation>
 			</a-plane>
 			
-			<a-cylinder radius="0.25" height="0.03" position="0 0 0" rotation="0 90 0" src="images/5ebec.jpg" shadow>
-				<a-animation attribute="position" begin="2000" from="0 0 0" to="2 0 0" easing="ease-out-cubic"></a-animation>
-				<a-animation attribute="rotation" begin="4000" from="0 90 0" to="0 90 360" repeat="indefinite" easing="ease-in-out-elastic"></a-animation>
+			<a-cylinder radius="0.25" height="0.03" position="0 -0.1 0" rotation="0 90 0" src="images/5ebec.jpg" shadow>
+				<a-animation attribute="position" begin="2000" from="0 -0.1 0" to="1.5 -0.1 0" easing="ease-out-cubic"></a-animation>
+				<a-animation attribute="rotation" begin="3000" from="0 90 0" to="360 90 0" repeat="indefinite" easing="ease-out-elastic"></a-animation>
 			</a-cylinder>
 			
-			<a-box intensity="0" width="1.5" height="1" depth="0.05" position="0 0 0" rotation="-30 0 0" src="images/tatekan.jpg" shadow>
-				<a-animation attribute="intensity" dur="5000" begin="10000" to="3"></a-animation>
+			<a-plane width="1.33" height="1" rotation="-90 0 0" src="movie/tatekan.mov" shadow>
+				<a-animation attribute="position" begin="4000" from="0 -0.1 0" to="0 -0.1 1.5" easing="ease-out-cubic"></a-animation>
+			</a-plane>
+			
+			<a-box visible="false" width="1.5" height="1" depth="0.05" position="0 0 0" rotation="-30 0 0" src="images/tatekan.jpg" shadow>
+				<a-animation attribute="visible" begin="10000" to="true"></a-animation>
 			</a-box>
 			
   	</a-marker>
