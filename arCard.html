@@ -11,24 +11,28 @@
 </head>
 
   <body style='margin : 0px; overflow: hidden;'>
-		<p>6</p>
+		<p>7</p>
 		<!-- debugUI false -->
     <a-scene embedded arjs="debugUIEnabled:false;">
+		<!-- AR camera -->
+		<a-entity camera></a-entity>
 		<!-- set marker -->
   	<a-marker preset='custom' type='pattern' url="marker/pattern-marker.patt">
+			
 			<a-plane width="1.5" height="1" rotation="-90 0 0" color="#a5ebec">
-				<a-animation attribute="visible" dur="500" begin="2000" from="false" to="true" direction="alternate" repeat="4" easing="ease-in-out"></a-animation>
+				<a-animation attribute="visible" dur="500" from="false" to="true" direction="alternate" repeat="5"></a-animation>
 			</a-plane>
-			<a-box visible="false" width="1.5" height="1" depth="0.05" position="0 0 0" rotation="-30 0 0" src="images/tatekan.jpg" shadow>
-				<a-animation attribute="visible" dur="5000" begin="2000" to="true" easing="ease-out-cubic"></a-animation>
-			</a-box>
-			<a-cylinder radius="0.25" height="0.03" rotation="0 0 0" src="images/5ebec.jpg" shadow>
+			
+			<a-cylinder radius="0.25" height="0.03" position="0 0 0" rotation="0 90 0" src="images/5ebec.jpg" shadow>
 				<a-animation attribute="position" begin="2000" from="0 0 0" to="2 0 0" easing="ease-out-cubic"></a-animation>
-				<a-animation attribute="rotation" begin="1000" dur="2000" from="0 0 0" to="0 90 0" easing="ease-out-cubic"></a-animation>
+				<a-animation attribute="rotation" begin="5000" from="0 0 0" to="0 0 360" repeat="indefinite" easing="ease-out-cubic"></a-animation>
 			</a-cylinder>
+			
+			<a-box visible="false" width="1.5" height="1" depth="0.05" position="0 0 0" rotation="-30 0 0" src="images/tatekan.jpg" shadow>
+				<a-animation attribute="visible" dur="5000" begin="10000" to="true"></a-animation>
+			</a-box>
+			
   	</a-marker>
-		<!-- AR camera -->
-  	<a-entity camera></a-entity>
     </a-scene>
   </body>
 
