@@ -455,4 +455,10 @@ figure {
   }
 }
 
+#target {
+	width: 1600px;
+	height: 1000px;
+	font-size: 500%;
+}
+
 /*# sourceMappingURL=style.css.map */
