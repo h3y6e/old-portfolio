@@ -11,7 +11,7 @@
 </head>
 
   <body style='margin : 0px; overflow: hidden;'>
-		<p>19</p>
+		<p>20</p>
 		<!-- debugUI false -->
     <a-scene embedded arjs="debugUIEnabled:false;">
 		<!-- AR camera -->
@@ -19,27 +19,23 @@
 		<!-- set marker -->
   	<a-marker preset='custom' type='pattern' url="marker/pattern-marker.patt">
 			
-			<a-plane opacity="1" width="1.5" height="1" rotation="-90 0 0" color="#a5ebec" shadow>
+			<a-plane opacity="1" rotation="-90 0 0" color="#a5ebec" shadow>
 				<a-animation attribute="material.opacity" from="1" to="0" repeat="4" direction="alternate"></a-animation>
 			</a-plane>
 			
-			<a-box depth="0.05" position="0 0.5 0" rotation="0 0 0" src="#FFF" shadow></a-box>
-			
-			<a-cylinder opacity="1" radius="0.25" height="0.03" position="0 -0.1 0" rotation="0 90 0" src="images/5ebec.jpg" shadow>
+			<a-cylinder opacity="0" radius="0.25" height="0.03" position="0 0 0" rotation="0 90 0" src="images/5ebec.jpg" shadow>
 				<a-animation attribute="material.opacity" begin="2000" to="1"></a-animation>
-				<a-animation attribute="position" begin="2000" from="0 -0.1 0" to="1.5 -0.1 0" easing="ease-out-cubic"></a-animation>
-				<a-animation attribute="rotation" begin="3000" from="0 90 0" to="0 90 180" repeat="indefinite" easing="ease-out-elastic"></a-animation>
-				<a-animation attribute="position" begin="5000" from="1.5 -0.1 0" to="1.5 -0.1 -1" easing="ease-out-cubic"></a-animation>
+				<a-animation attribute="position" begin="2000" from="0 0 0" to="0 1 0" easing="ease-out-cubic"></a-animation>
+				<a-animation attribute="rotation" begin="2000" from="0 90 0" to="0 90 360" repeat="indefinite" easing="ease-out-elastic"></a-animation>
 			</a-cylinder>
 			
 			<a-box visible="false" width="1.5" height="1" depth="0.05" position="0 0 0" rotation="-90 0 0" src="images/tatekan.jpg" shadow>
-				<a-animation attribute="visible" begin="10000" to="true"></a-animation>
-				<a-animation attribute="rotation" begin="10000" dur="3000" from="-90 0 0" to="-30 0 0" easing="ease-out-elastic"></a-animation>
+				<a-animation attribute="visible" begin="20000" to="true"></a-animation>
+				<a-animation attribute="rotation" begin="20000" dur="3000" from="-90 0 0" to="-30 0 0" easing="ease-out-cubic"></a-animation>
+				<a-animation attribute="position" begin="2000" from="0 0 0" to="0 0.5 0" easing="ease-out-cubic"></a-animation>
 			</a-box>
+			
   	</a-marker>
-    </a-scene>
+	</a-scene>
   </body>
- 
 </html>
-
-  
