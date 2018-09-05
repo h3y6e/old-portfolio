@@ -11,7 +11,7 @@
 </head>
 
   <body style='margin : 0px; overflow: hidden;'>
-		<p>23</p>
+		<p>24</p>
 		<!-- debugUI false -->
 		<a-scene embedded arjs="debugUIEnabled:false;">
 		<!-- AR camera -->
@@ -19,7 +19,7 @@
 		<!-- set marker -->
   	<a-marker preset='custom' type='pattern' url="marker/pattern-marker.patt">
 			
-			<a-box opacity="0.5" position="0 0.5 0" color="#a5ebec"></a-box>
+			<a-box opacity="0.5" position="0 0.5 0" wireframe="true"></a-box>
 			
 			<a-plane opacity="1" position="0 0 -0.5" rotation="-90 0 0" color="#a5ebec">
 				<a-animation attribute="material.opacity" from="1" to="0" repeat="5" direction="alternate"></a-animation>
