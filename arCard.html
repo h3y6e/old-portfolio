@@ -20,7 +20,7 @@
 			
 			<a-cylinder opacity="0" radius="0.25" height="0.03" position="0 -0.4 0" rotation="0 90 0" src="images/5ebec.jpg" >
 				<a-animation attribute="rotation" from="0 90 0" to="0 90 180" dur="2000" repeat="indefinite" easing="ease-out"></a-animation>
-				<a-animation attribute="position" begin="2000" from="0 -0.4 0" to="0 0.4 0" easing="ease-out-cubic"></a-animation>
+				<a-animation attribute="position" begin="2000" from="0 -0.4 0" to="0 0 0" easing="ease-out-cubic"></a-animation>
 				<a-animation attribute="material.opacity" begin="2000" to="1"></a-animation>
 				<a-animation attribute="scale" begin="2000" from="0 0 0" to="1 1 1" easing="ease-out"></a-animation>
 			</a-cylinder>
@@ -28,7 +28,7 @@
 			<a-image width="1" height="0.1615" opacity="0" position="0 -0.4 0.4" rotation="-90 0 0" src="ar_img/5ebec_text.png">
 				<a-animation attribute="material.opacity" begin="2500" to="1"></a-animation>
 				<a-animation attribute="scale" begin="2500" from="0 0 0" to="1 1 1" easing="ease-out"></a-animation>
-				<a-animation attribute="position" begin="2500" from="0 -0.4 0.4" to="0 0.4 0.4" easing="ease-out-cubic"></a-animation>
+				<a-animation attribute="position" begin="2500" from="0 -0.4 0.4" to="0 0 0.4" easing="ease-out-cubic"></a-animation>
 				<a-animation attribute="material.opacity" begin="5000" from="1" to="0" easing="linear"></a-animation>
 				<a-animation attribute="visible" begin="6000" to="false"></a-animation>
 			</a-image>
@@ -39,13 +39,29 @@
 			
 			<a-image width="0.7143" height="0.125" opacity="0" rotation="-90 0 0" src="ar_img/profile_text.png">
 				<a-animation attribute="material.opacity" begin="7000" to="1"></a-animation>
-				<a-animation attribute="position" begin="7000" from="0 -0.1 0" to="-0.5 -0.1 0.75" easing="ease-out-cubic"></a-animation>
+				<a-animation attribute="position" begin="7000" from="-0.5 -0.1 0" to="-0.5 -0.1 0.75" easing="ease-out-cubic"></a-animation>
 			</a-image>
 			
 			<a-image width="2" height="0.406" opacity="0" rotation="-90 0 0" src="ar_img/profile.png">
 				<a-animation attribute="material.opacity" begin="7500" to="1"></a-animation>
-				<a-animation attribute="position" begin="7500" from="0 -0.1 0" to="0.24 -0.1 1.125" easing="ease-out-cubic"></a-animation>
+				<a-animation attribute="position" begin="7500" from="0.24 -0.1 0" to="0.24 -0.1 1.125" easing="ease-out-cubic"></a-animation>
 			</a-image>
+			
+			<a-image width="0.78125" height="0.125" opacity="0" rotation="-90 0 0" src="ar_img/contact_text.png">
+				<a-animation attribute="material.opacity" begin="8500" to="1"></a-animation>
+				<a-animation attribute="position" begin="8500" from="0.24 -0.1 0" to="0.24 -0.1 1.125" easing="ease-out-cubic"></a-animation>
+			</a-image>
+			
+			<a-image width="1.62" height="1" opacity="0" rotation="-90 0 0" src="ar_img/contact_logo.png">
+				<a-animation attribute="material.opacity" begin="9000" to="1"></a-animation>
+				<a-animation attribute="position" begin="9000" from="0 -0.1 -0.5" to="1.375 -0.1 -0.5" easing="ease-out-cubic"></a-animation>
+			</a-image>
+			
+			<a-image width="1.62" height="1" opacity="0" rotation="-90 0 0" src="ar_img/contact.png">
+				<a-animation attribute="material.opacity" begin="9500" to="1"></a-animation>
+				<a-animation attribute="position" begin="9500" from="0 -0.1 -0.2" to="1.875 -0.1 0.2" easing="ease-out-cubic"></a-animation>
+			</a-image>
+			
 			
 			
 		</a-marker>
