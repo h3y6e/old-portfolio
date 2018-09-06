@@ -18,11 +18,10 @@
 		<!-- set marker -->
   	<a-marker preset='custom' type='pattern' url="marker/pattern-marker.patt">
 			
-			<a-image opacity="0" position="0 0 0" rotation="-90 0 0" src="ar_img/5ebec.png">
-				<a-animation attribute="material.opacity" begin="4000" to="1">
-					<a-animation attribute="scale" from="0 0 0" to="1 1 1" easing="ease-out"></a-animation>
-					<a-animation attribute="position" from="0 -0.2 -0.4" to="0 0.5 -0.4" easing="ease-out-cubic"></a-animation>
-				</a-animation>
+			<a-image opacity="0" position="0 0 0" rotation="-90 0 0" src="ar_img/5ebec_text.png">
+				<a-animation attribute="material.opacity" begin="4500" to="1"></a-animation>
+				<a-animation attribute="scale" begin="4500" from="0 0 0" to="1 1 1" easing="ease-out"></a-animation>
+				<a-animation attribute="position" begin="4500" from="0 -0.2 -0.4" to="0 0.5 -0.4" easing="ease-out-cubic"></a-animation>
 				<a-animation attribute="material.opacity" begin="9000" to="0"></a-animation>
 			</a-image>
 			
@@ -30,12 +29,11 @@
 				<a-animation attribute="material.opacity" begin="10000" to="1"></a-animation>
 			</a-image>
 			
-			<a-cylinder opacity="0" scale"0 0 0" radius="0.5" height="0.03" position="0 -0.2 -0.4" rotation="0 90 0" src="images/5ebec.jpg" >
-				<a-animation attribute="material.opacity" begin="4000" to="1">
-					<a-animation attribute="scale" from="0 0 0" to="1 1 1" easing="ease-out"></a-animation>
-					<a-animation attribute="position" from="0 -0.2 -0.4" to="0 0.5 -0.4" easing="ease-out-cubic"></a-animation>
-				</a-animation>
+			<a-cylinder opacity="0" radius="0.25" height="0.04" position="0 -0.2 -0.4" rotation="0 90 0" src="images/5ebec.jpg" >
 				<a-animation attribute="rotation" from="0 90 0" to="0 90 180" repeat="indefinite" easing="ease-out"></a-animation>
+				<a-animation attribute="material.opacity" begin="4000" to="1"></a-animation>
+				<a-animation attribute="scale" begin="4000" from="0 0 0" to="1 1 1" easing="ease-out"></a-animation>
+				<a-animation attribute="position" begin="4000" from="0 -0.2 -0.4" to="0 0.5 -0.4" easing="ease-out-cubic"></a-animation>
 			</a-cylinder>
 			
 			
